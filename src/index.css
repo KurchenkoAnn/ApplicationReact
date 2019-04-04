@@ -20,19 +20,22 @@ ul.header li{
 }
 
 ul.header{
-  background-color: black;
+  background-color:#5A5560;
   padding: 0;
+  /* #E7717D; #1F2833;*/
 }
 ul.header li a{
   color: white;
   font-weight: bold;
   text-decoration: none;
+
   padding:20px;
   display: inline-block;
 }
 ul.header li a:hover{
   color: white;
-  background-color: blue;
+  background-color: #46344E;
+  /* #45A29E */
 }
 
 .content{
