@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
+import './index.css'
+import 'bulma/css/bulma.css'
 import Home from './Home';
 import Weather from'./WeatherApp';
 import StarWars from './StarWarsApp';
@@ -13,7 +15,7 @@ class App extends Component {
     return (
     <HashRouter>
      <div className="App">
-       <h1>Multi page App on Ract.JS</h1>
+       {/* <h1>Multi page App on Ract.JS</h1> */}
        <ul className="header">
        <li>
              <NavLink to="/">Home</NavLink>
@@ -31,12 +33,14 @@ class App extends Component {
              <NavLink to="/about">About</NavLink>
        </li>
       </ul>
+      
+
       <div className="content">
-         <Route path="/" component={Home}/>
-         <Route path="/weather" component={Weather}/>
-         <Route path="/star-wars" component={StarWars}/>
-         <Route path="/todo-list" component={TodoList}/>
-         <Route path="/about" component={About}/>
+         <Route exact path="/" component={Home}/>
+         <Route  path="/weather" component={Weather}/>
+         <Route  path="/star-wars" component={StarWars}/>
+         <Route  path="/todo-list" component={TodoList}/>
+         <Route  path="/about" component={About}/>
       </div>
     </div>
    </HashRouter>
