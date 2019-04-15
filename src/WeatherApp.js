@@ -33,19 +33,22 @@ render(){
   const iconURL ="http://api.openweathermap.org/img/w/" + weather.icon + ".png";
   return(
   // <div>{JSON.stringify(weatherData)}</div>
-  <div>
-    <h1>
-      {weather.main} in {weatherData.name}
+
+
+<article class="message is-medium">
+<div class="message-header">
+{weather.main} in {weatherData.name}
       <img src={iconURL} alt={weatherData.description}/> 
-    </h1>
-    <p>Current temp: {weatherData.main.temp} °C</p>
+  {/* <button class="delete" aria-label="delete"></button> */}
+</div>
+<div class="message-body">
+<p>Current temp: {weatherData.main.temp} °C</p>
     <p>Min temp: {weatherData.main.temp_min} °C</p>
     <p>Max temp: {weatherData.main.temp_max} °C</p>
     <p>Wind speed: {weatherData.wind.speed} m/sec</p>
     <p>Pressure: {weatherData.main.pressure} pasc</p>
-
-
-  </div>
+</div>
+</article>
   );
 }
 }

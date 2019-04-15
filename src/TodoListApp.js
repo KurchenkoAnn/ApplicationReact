@@ -6,7 +6,7 @@ import './App.css';
 let todoitems = [];
 todoitems.push({index:1,value: "To do home task from Math",done : false} );
 todoitems.push({index:2, value: "To do home task from programmer",done:true  });
-todoitems.push({index:3, value: "Become older",done:false  });
+todoitems.push({ index: 2, value: "Learn Docker", done: false });
 class TodoList extends Component{
   render(){
     var todoitems = this.props.items.map((item,index)=>{
@@ -84,7 +84,7 @@ class TodoForm extends Component{
   {
     return(
       <form ref="form" onSubmit={this.onSubmit} className="form-inline">
-       <input type="text" ref="itemName" className="form-control" placeholder="add new task..." />
+       <input class="input is-rounded"  ref="itemName" type="text" placeholder=" Add new task..." ></input><br></br>
        <button type="submit" className="button is-default">ADD</button>
       </form>
     );

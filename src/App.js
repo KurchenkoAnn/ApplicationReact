@@ -21,6 +21,9 @@ class App extends Component {
              <NavLink to="/">Home</NavLink>
        </li>
        <li>
+             <NavLink to="/about">About</NavLink>
+       </li>
+       <li>
              <NavLink to="/weather">Weather APP</NavLink>
        </li>
        <li>
@@ -29,9 +32,7 @@ class App extends Component {
        <li>
               <NavLink to="/todo-list">Todo List APP</NavLink>
        </li>
-       <li>
-             <NavLink to="/about">About</NavLink>
-       </li>
+      
       </ul>
       
 
